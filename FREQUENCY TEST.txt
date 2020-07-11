@@ -1,0 +1,40 @@
+********* FREQUENCY TEST CODE *********
+
+Purpose:
+=======
+TO keep track of how many CYCLES are executed during a period of TIME.
+
+Code:
+====
+Frequency test can be done in any code. 
+LED indication at the begining and end of certain fixed number of cycles.
+
+Example	:
+=======
+freq_test_din (Hover code)
+
+under z_main_code tab uncomment the following portions
+
+***********************************************************************
+void setup()
+{
+ .....
+//  PORTB |= B10000000; 	//"TURN ON LED"
+//  delay(2000);		//Keep it ON for TWO seconds
+//  PORTB &= B01111111;		//"TURN OFF LED". Start the "STOP CLOCK"
+ .....
+}
+
+void loop()
+{
+ .....
+//  i = i + 1;			//Increment the counter every CYCLE
+//  if (i > 5000)		//If the COUNTER exceeds say 5000 cycles
+//    PORTB |= B10000000;	//"TURN ON LED". Stop the "STOP CLOCK".
+ .....
+}
+
+ 	cycles (5000)
+freq =  --------------- 	
+	STOP CLOCK TIME
+***********************************************************************
